@@ -1,0 +1,13 @@
+div{
+    background-color:rgb(128, 128, 128);
+   
+}
+
+app-social{
+    float: right;
+    margin-top: 24px;
+
+}
+app-banner{
+    box-shadow: 2px -2px 5px #999;
+}

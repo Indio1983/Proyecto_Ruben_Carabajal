@@ -1,0 +1,58 @@
+.container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#logoAP{
+    width: 150px;
+}
+
+img{
+    width: 50px;
+    margin-left: 10px;
+}
+div #facebook:hover {
+    background-color: blue;
+    border-radius: 100%;
+}
+
+div #instagram:hover {
+    background-color: rgb(255, 0, 170);
+    border-radius: 100%;
+}
+div #twitter:hover {
+    background-color: rgb(0, 174, 255);
+    border-radius: 100%;
+}
+div #linkedin:hover {
+    background-color: rgb(38, 0, 255);
+    border-radius: 100%;
+}
+div #github:hover {
+    background-color: rgba(0, 0, 0, 0.274);  
+    border-radius: 100%;
+}
+
+.btn{ 
+    margin-right: 10PX;
+    margin-left: 10px;
+    border-width: medium;
+}
+
+
+@media(max-width: 575px){
+    .container{
+        flex-direction: column;
+    }
+    .redes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .redes img{
+        margin: 0.2em;
+    }
+
+}

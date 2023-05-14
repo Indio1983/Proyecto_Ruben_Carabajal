@@ -1,0 +1,37 @@
+
+
+.row{
+    padding: 20px;
+    background-color:rgb(128, 128, 128);
+}
+.contenedor{
+    width: auto;
+}
+.parte1, .parte2{
+    display: inline-block;
+    text-align: justify;
+}
+
+/*efecto flotante en la imagen*/
+.img-proyecto{
+    box-shadow: 10px 10px 30px #000000;
+    /*box-shadow: ejeX ejeY difumacion color;*/
+    width: 90em;
+    height: 10em;
+}
+
+.img-proyecto:hover{
+    color: rgba(255, 255, 255, 1) !important;
+    box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
+}
+p{
+    font-size: 20px ;
+    text-decoration: none;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+}
+h1{
+    font-size: 30px;
+    text-decoration: none;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+}
