@@ -5,6 +5,7 @@ import com.rocportfolio.roc.Entity.Persona;
 import com.rocportfolio.roc.Interfase.IPersonaService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,10 +21,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class PersonaController {
     @Autowired IPersonaService ipersonaService;
 
-    @GetMapping ("personas/traer")
+    @GetMapping ("personas/traer")  //cualquier usuario podra traer el port folio
     public List<Persona> getPersona(){
          return ipersonaService.getPersona();
     }
+    
+    @PreAuthorize("hasRole('ADMIN')") //solo  los usuario admin podrar crear,boorar,agregar
     
     @PostMapping("/personas/crear")
     public String createPersona(@RequestBody Persona persona){

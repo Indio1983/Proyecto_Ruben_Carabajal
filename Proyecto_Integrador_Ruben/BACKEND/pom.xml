@@ -60,8 +60,12 @@
             <artifactId>jjwt</artifactId>
             <version>0.9.1</version>
 </dependency>
-
-
+       
+        <dependency>
+            <groupId>io.github.icemap</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.20</version>
+        </dependency>
     </dependencies>
 
     <build>
