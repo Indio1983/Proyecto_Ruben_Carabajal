@@ -1,33 +1,31 @@
 <div class="row">
-    <h1>EDUCACIÓN:</h1>
-    <div class="col-lg-1"></div>
-    <div class="col-lg-11">
-        <ul>
-            <li>
-                <h1>Técnico en informática</h1> - <h3>(1999 - 2002)</h3>
-            </li>
-              <p>
-                Instalación, mantenimiento y conficuración de PC. Instalacion de redes, manejo de paquete office.
-              </p>
-        </ul>
+  <h1>Educacion</h1>
+  <div class="col-lg-2">
+      <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+          Agregar Educacion
+      </button>
+  </div>
 
-        <ul>
-            <li>
-                <h1>Desarrollo Front End</h1> - <h3>(2021 -2022)</h3>
-            </li>
-              <p>
-                Diseño de paginas web con html,css y javascript
-              </p>
-        </ul>
+  <div class="col lg 1"></div>
+  <div class="col-lg-11">
+      <table class="table">
+          <tbody>
+              <tr *ngFor="let Educacion of educacion">
+                  <td>
+                      <h2>{{Educacion.nombreE}}</h2>
+                  </td>
+                  <td>{{Educacion.descripcionE}}</td>
+                  <td *ngIf="isLogged">
+                      <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
+                          <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                  </td>
+                  <td *ngIf="isLogged">
+                      <button class="btn btn-danger" (click)="delete(Educacion.id)">
+                          <i class="bi bi-trash-fill"></i> BORRAR</button>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
 
-        <ul>
-            <li>
-                <h1>Curso de redes informáticas</h1> - <h3>(2021 - 2021)</h3>
-            </li>
-              <p>
-                Instalación, configuración y mantenimiento de redes informática. 
-              </p>
-        </ul>
-
-    </div>
 </div>
