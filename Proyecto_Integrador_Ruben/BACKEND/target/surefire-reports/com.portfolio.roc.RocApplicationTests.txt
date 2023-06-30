@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.portfolio.roc.RocApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.608 s - in com.portfolio.roc.RocApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 33.362 s - in com.portfolio.roc.RocApplicationTests
